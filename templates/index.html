@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud El Mehdi El Khadiri | Portfolio</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Mahmoud El Mehdi El Khadiri</h1>
+        <p>Web and Data Engineer, Modeling and Computer Science Engineering</p>
+    </header>
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='images/finance-image.jpg') }}" alt="Finance"></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='images/software-engineering-image.jpg') }}" alt="Software Engineering"></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='images/stocks-evolution-image.jpg') }}" alt="Stocks Evolution"></div>
+
+           
+
+        </div>
+     
+    <div class="swiper-pagination-container">
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <section class="cv-section"></section>
+    <div class="cv-preview-container">
+    <div class="cv-preview">
+        <img src="{{ url_for('static', filename='images/cv photo.png') }}" alt="CV Design Preview">
+        <a href="{{ url_for('static', filename='files/CV - Mahmoud El Mehdi El Khadiri-1.pdf') }}" download="Mahmoud_El_Mehdi_El_Khadiri_CV.pdf">
+            <button>Download CV</button>
+        </a>
+    </div></div></section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mahmoudelmehdielkhadiri@gmail.com">mahmoudelmehdielkhadiri@gmail.com</a></p>
+        <p>Phone: +212 663054088</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Ecole Mohamadia d'ingénieurs</li>
+            <li>Lycée Mohamed 6 Kenitra</li>
+            <li>Groupe Pédagogique Alpha</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Web Engineer at MAST-ENGINEERING</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, Java, C#, C, C++, HTML, CSS, JavaScript</li>
+            <li>Flask, Full-stack Web Development, Android Studio, Mobile App Development</li>
+            <li>Matlab, R, Linux, Visual Studio Code, Visual Studio, OOP, SQL</li>
+            <li> Microsoft: Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Microsoft Access</li> 
+            <li>Solidworks, Autodesk Robot structural analysis , Autodesk Autocad , Machine learning , NVidia CUDA</li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>Arabic (Native)</li>
+            <li>French (B2) - DELF B2 Certificate</li>
+            <li>English (B2/C1) - TOEIC Certificate</li>
+        </ul>
+    </section>
+   
+    <footer>
+        <p>&copy; 2023 Mahmoud El Mehdi El Khadiri</p>
+    </footer>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'slide',
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    
+    
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'slide',
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    });
+</script>
+
+</body>
+
+</html>
